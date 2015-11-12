@@ -32,7 +32,6 @@ def bootstrap_resources():
     return True
 
 
-@when_not('hadoop.installed')
 @hook('install')
 def install():
     if not bootstrap_resources():
@@ -46,5 +45,5 @@ def install():
     if not hadoop.verify_conditional_resources():
         return
     hadoop.install()
-
+    
 

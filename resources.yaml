@@ -4,10 +4,7 @@ resources:
   pathlib:
     pypi: path.py>=7.0
   jujubigdata:
-    pypi: jujubigdata.tar.gz
-    hash: 09f6817a1a2a86430c0c6f05f91ed120930d09bf61363fc592b91f6e311b684a
-    hash_type: sha256
-    #pypi: jujubigdata>=4.0.0,<5.0.0
+    pypi: jujubigdata>=4.0.0,<5.0.0
   charm-benchmark:
     pypi: charm-benchmark>=1.0.1,<2.0.0
   java-installer:
