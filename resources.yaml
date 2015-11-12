@@ -1,0 +1,45 @@
+options:
+  output_dir: /home/ubuntu/resources
+resources:
+  pathlib:
+    pypi: path.py>=7.0
+  jujubigdata:
+    pypi: jujubigdata.tar.gz
+    hash: 09f6817a1a2a86430c0c6f05f91ed120930d09bf61363fc592b91f6e311b684a
+    hash_type: sha256
+    #pypi: jujubigdata>=4.0.0,<5.0.0
+  charm-benchmark:
+    pypi: charm-benchmark>=1.0.1,<2.0.0
+  java-installer:
+    # This points to a script which manages installing Java.
+    # If replaced with an alternate implementation, it must output *only* two
+    # lines containing the JAVA_HOME path, and the Java version, respectively,
+    # on stdout.  Upon error, it must exit with a non-zero exit code.
+    url: https://git.launchpad.net/bigdata-data/plain/common/noarch/java-installer.sh?id=baa0b74b86587f97b446f255deb96c8420021dd8
+    hash: f7df6937bdb4dcc60de559252b4e6b65c77959f871c7ef2e59af57832d7ddfca
+    hash_type: sha256
+optional_resources:
+  hadoop-aarch64:
+    url: https://git.launchpad.net/bigdata-data/plain/apache/aarch64/hadoop-2.4.1.tar.gz?id=c34a21c939f5fce9ab89b95d65fe2df50e7bbab0
+    hash: 03ad135835bfe413f85fe176259237a8
+    hash_type: md5
+  hadoop-ppc64le:
+    url: https://s3.amazonaws.com/jujubigdata/apache/ppc64le/hadoop-2.4.1-ppc64le-09942b1.tar.gz
+    hash: 09942b168a3db0d183b281477d3dae9deb7b7bc4b5783ba5cda3965b62e71bd5
+    hash_type: sha256
+  hadoop-x86_64:
+    url: https://s3.amazonaws.com/jujubigdata/apache/x86_64/hadoop-2.4.1-a790d39.tar.gz
+    hash: a790d39baba3a597bd226042496764e0520c2336eedb28a1a3d5c48572d3b672
+    hash_type: sha256
+  hadoop-2.4.1-x86_64:
+    url: https://s3.amazonaws.com/jujubigdata/apache/x86_64/hadoop-2.4.1-a790d39.tar.gz
+    hash: a790d39baba3a597bd226042496764e0520c2336eedb28a1a3d5c48572d3b672
+    hash_type: sha256
+  hadoop-2.7.1-x86_64:
+    url: http://mirrors.ukfast.co.uk/sites/ftp.apache.org/hadoop/common/hadoop-2.7.1/hadoop-2.7.1.tar.gz
+    hash: 991dc34ea42a80b236ca46ff5d207107bcc844174df0441777248fdb6d8c9aa0
+    hash_type: sha256
+  hadoop-lzo-x86_64:
+    url: https://s3.amazonaws.com/jujubigdata/apache/x86_64/hadoop-lzo-0.4.20-SNAPSHOT-x86_64-98421de6.tgz
+    hash: 98421de6bea220c1531b50403de7b4d6e49955e9104d7cf15d943fe2ba45e295
+    hash_type: sha256

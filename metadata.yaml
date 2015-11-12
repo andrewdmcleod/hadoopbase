@@ -1,0 +1,8 @@
+name: hadoopbase 
+summary: Hadoop Base installs the hadoop base software
+maintainer: bigdata@lists.ubuntu.com
+description: |
+  Hadoop is a ...
+  ... and also that.
+tags:
+  - bigdata 
